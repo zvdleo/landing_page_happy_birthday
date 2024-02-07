@@ -1,5 +1,13 @@
 AOS.init();
 
+const confirmButton = document.getElementById('confirmButton');
+
+        confirmButton.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            alert('Confirmation made successfully');
+    });
+
 const dataDoEvento = new Date("Feb 22, 2024 19:00:00");
 const timeStampDoEvento = dataDoEvento.getTime();
 
